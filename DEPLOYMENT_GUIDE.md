@@ -21,76 +21,72 @@
 
 ## 🔧 Langkah-langkah Push ke GitHub
 
-### **1. Cek Status Repository**
+### **✅ Status Saat Ini**
+Repository sudah di-commit dengan:
+- **Commit ID**: `ee61288`
+- **Message**: "feat: Initial release v1.2.0 - Absensi PWA with Navigation & Notification Improvements"
+- **Status**: Ready to push
+
+### **1. Setup Remote Repository**
 ```bash
-# Lihat status file yang berubah
+# Buat repository baru di GitHub (via web atau CLI)
+# Kemudian tambahkan remote origin:
+
+git remote add origin https://github.com/USERNAME/absensi-pwa.git
+
+# Atau jika menggunakan SSH:
+git remote add origin git@github.com:USERNAME/absensi-pwa.git
+
+# Verifikasi remote
+git remote -v
+```
+
+### **2. Push ke GitHub**
+```bash
+# Push initial commit ke GitHub
+git push -u origin master
+
+# Atau jika GitHub menggunakan 'main' sebagai default branch:
+git branch -M main
+git push -u origin main
+```
+
+### **3. Verifikasi Push Berhasil**
+```bash
+# Cek status setelah push
 git status
 
-# Lihat perubahan detail
-git diff
+# Lihat remote tracking
+git branch -vv
 ```
 
-### **2. Add Files ke Staging**
+### **4. Setup Repository di GitHub (Web)**
+1. **Buka GitHub.com** dan login
+2. **Create New Repository**:
+   - Repository name: `absensi-pwa`
+   - Description: "PWA Aplikasi Absensi dengan Navigasi Tanggal dan Notifikasi Center"
+   - Public/Private: Pilih sesuai kebutuhan
+   - ❌ **Jangan** centang "Initialize with README" (karena sudah ada)
+3. **Copy repository URL** untuk step 1 di atas
+
+### **5. Langkah Praktis Sekarang**
+
+**Untuk push repository ini ke GitHub, jalankan:**
+
 ```bash
-# Add semua file yang berubah
-git add .
+# 1. Buat repository di GitHub.com dengan nama 'absensi-pwa'
+# 2. Copy URL repository (contoh: https://github.com/username/absensi-pwa.git)
+# 3. Jalankan commands berikut:
 
-# Atau add file spesifik
-git add components/icons/IconLibrary.vue
-git add components/MessageBox.vue
-git add components/ProfileSetupModal.vue
-git add pages/riwayat.vue
-git add pages/index.vue
-git add composables/useAttendance.js
-git add assets/css/main.css
-git add changelog/v1.2.0-navigation-improvements.md
-git add DEPLOYMENT_GUIDE.md
+git remote add origin https://github.com/YOUR_USERNAME/absensi-pwa.git
+git push -u origin master
+
+# Jika GitHub menggunakan 'main':
+git branch -M main
+git push -u origin main
 ```
 
-### **3. Commit Changes**
-```bash
-# Commit dengan pesan yang jelas
-git commit -m "feat: Add date navigation, import data, and center notifications
-
-✨ New Features:
-- Date navigation buttons on recap page (< Date >)
-- Import data button in profile setup modal
-- Center-positioned notifications with 150ms animation
-
-🎨 UI Improvements:
-- Chevron navigation for month switching
-- Modal-like notification overlay
-- Auto-fill profile from backup import
-
-📱 UX Enhancements:
-- Faster animations (300ms → 150ms)
-- Better visibility with backdrop blur
-- Seamless import workflow
-
-🔧 Technical:
-- Added chevron-left/right icons
-- Enhanced MessageBox component
-- New navigateMonth function
-- Improved error handling
-
-Closes #[issue-number] if applicable"
-```
-
-### **4. Push ke GitHub**
-```bash
-# Push ke branch main/master
-git push origin main
-
-# Atau jika menggunakan branch feature
-git push origin feature/navigation-improvements
-```
-
-### **5. Buat Pull Request (Opsional)**
-Jika menggunakan branch feature, buat PR di GitHub:
-1. Go to repository di GitHub
-2. Click "Compare & pull request"
-3. Add description dan review changes
-4. Merge ke main branch
+**Ganti `YOUR_USERNAME` dengan username GitHub Anda!**
 
 ---
 
