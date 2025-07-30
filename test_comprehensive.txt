@@ -1,0 +1,23 @@
+1 Januari
+CI : 08:00
+CO : 17:00
+Catatan : Hari kerja normal
+---
+2 Januari
+CI : 8:15
+CO : 17:30
+---
+3 Januari
+CI : 07:45
+CO : -
+Catatan : Lupa check out
+---
+5 Januari
+CI : 09:00
+CO : 18:00
+Catatan : Datang terlambat
+---
+10 Januari
+CI : 08:30
+CO : 16:30
+Catatan : Pulang lebih awal

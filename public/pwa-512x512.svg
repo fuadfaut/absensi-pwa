@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="512" height="512" fill="url(#bg)" rx="51.2"/>
+    
+    <!-- Clock circle -->
+    <circle cx="256" cy="256" r="153.6" fill="none" stroke="white" stroke-width="10.24"/>
+    
+    <!-- Clock hands -->
+    <line x1="256" y1="256" x2="256" y2="148.48000000000002" stroke="white" stroke-width="7.68" stroke-linecap="round"/>
+    <line x1="256" y1="256" x2="179.2" y2="256" stroke="white" stroke-width="7.68" stroke-linecap="round"/>
+    
+    <!-- Center dot -->
+    <circle cx="256" cy="256" r="5.12" fill="white"/>
+    
+    <!-- Hour markers -->
+    <line x1="256" y1="117.75999999999999" x2="256" y2="107.52000000000001" stroke="white" stroke-width="2.56"/>
+    <line x1="325.12" y1="136.2806481808392" x2="330.24" y2="127.41254804608656" stroke="white" stroke-width="2.56"/>
+    <line x1="375.7193518191608" y1="186.88" x2="384.58745195391344" y2="181.76000000000002" stroke="white" stroke-width="2.56"/>
+    <line x1="394.24" y1="256" x2="404.48" y2="256" stroke="white" stroke-width="2.56"/>
+    <line x1="375.7193518191608" y1="325.12" x2="384.58745195391344" y2="330.24" stroke="white" stroke-width="2.56"/>
+    <line x1="325.12" y1="375.7193518191608" x2="330.24" y2="384.58745195391344" stroke="white" stroke-width="2.56"/>
+    <line x1="256" y1="394.24" x2="256" y2="404.48" stroke="white" stroke-width="2.56"/>
+    <line x1="186.88000000000002" y1="375.7193518191608" x2="181.76000000000005" y2="384.58745195391344" stroke="white" stroke-width="2.56"/>
+    <line x1="136.2806481808392" y1="325.12" x2="127.41254804608656" y2="330.24" stroke="white" stroke-width="2.56"/>
+    <line x1="117.75999999999999" y1="256" x2="107.52000000000001" y2="256" stroke="white" stroke-width="2.56"/>
+    <line x1="136.2806481808392" y1="186.88" x2="127.41254804608656" y2="181.76" stroke="white" stroke-width="2.56"/>
+    <line x1="186.87999999999994" y1="136.28064818083922" x2="181.75999999999993" y2="127.41254804608658" stroke="white" stroke-width="2.56"/>
+</svg>
